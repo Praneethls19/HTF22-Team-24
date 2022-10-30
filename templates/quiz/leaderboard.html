@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body style="background: linear-gradient(to right, #b9d5e8, #1b5291)">
+    {% include "quiz/navbar.html" %}
+  <br><br>
+  <h1 style="font-size: 700%; text-align: center; padding: 100px; width: 1200px; border: hidden 5px solid; margin: auto;">🏆 Leaderboard</h1>
+    <div >
+      
+    <table style="width: 500px; margin: auto auto;" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Name</th>
+            <th scope="col">Total Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Pranav</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Santhosh</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Chaitanya</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    {% include "quiz/footer.html" %}
+</body>
+</html>

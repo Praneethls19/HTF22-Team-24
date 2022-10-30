@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+    #about{
+      color: dodgerblue;
+      /* width: 1200px; */
+      border: 10px hidden grey;
+      padding: 15px;
+      margin: 20px;
+      font-size: 10vw;
+      font-weight: bold;
+      font-family: comic;
+      font-style: italic;
+    }
+
+  </style>
+
+  <title></title>
+</head>
+
+<body style="background-color:lightblue;">
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px; margin-top: 0px; background-color:lightblue; justify-content: center;">
+
+    <p id="about" class="lead"> <img src="{% static "image/cbitlogo.png" %}"  style="width: 12%;"> Team 24 CBIT </p>
+    
+    <p class="lead">A Platform For Students To practice Questions.  <br> Teacher can add course/exam to the System and Questions to that course.</p>
+    <hr class="my-4"><br>
+    <!-- <p>Explore our Website.</p> -->
+    <p class="lead">
+      <a class="btn btn-info btn-lg" href="/" role="button">HOME</a>
+    </p>
+    <br><br>
+    <p class="lead">Team Details<br>N K Chaitanya | P Pranav | Sai Praneeth L<br>Sai Teja Varma | Shinde Santhosh</p>
+    <br><br><br>
+  </div>
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
